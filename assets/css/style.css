@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Playfair+Display&display=swap');
+
+/* Generic style */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+/* Remove bullets from unordered list items throughout the site*/
+ul{
+    list-style-type: none; 
+    padding: 0;
+    margin: 0; 
+}
+body{
+    font-family: noto-sans, sans-serif;
+    font-weight: 400;
+    display: flex;
+    min-height: 100%;
+}
+
+/*Style header, logo and nav */
+
+#logo-menu-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+#site-logo {
+    max-height: 150px;
+    max-width: 150px;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+nav {
+    text-align: right;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+nav li {
+    display: inline-flex; /* list of links displayed on top of each other as default on small screen*/ 
+    height: 100%;
+    margin: 0 20px;
+    line-height: 40px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: color .5s;
+}
