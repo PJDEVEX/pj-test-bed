@@ -9,23 +9,28 @@
 }
 
 /* Remove bullets from unordered list items throughout the site*/
-ul{
-    list-style-type: none; 
+ul {
+    list-style-type: none;
     padding: 0;
-    margin: 0; 
+    margin: 0;
 }
-body{
+
+body {
     font-family: noto-sans, sans-serif;
     font-weight: 400;
     display: flex;
     min-height: 100%;
 }
 
+ul {}
+
 /*Style header, logo and nav */
 
 #logo-menu-flex {
     display: flex;
     flex-direction: row;
+    width: 100vw;
+    border: solid blue
 }
 
 #site-logo {
@@ -33,18 +38,21 @@ body{
     max-width: 150px;
     border-radius: 50%;
     padding: 20px;
+    border: solid green
 }
 
-nav {
+#menu {
     text-align: right;
     display: flex;
     align-items: center;
     width: 100%;
     justify-content: flex-end;
+    border: solid red;
 }
 
 nav li {
-    display: inline-flex; /* list of links displayed on top of each other as default on small screen*/ 
+    display: inline-flex;
+    /* list of links displayed on top of each other as default on small screen*/
     height: 100%;
     margin: 0 20px;
     line-height: 40px;
@@ -52,3 +60,17 @@ nav li {
     cursor: pointer;
     transition: color .5s;
 }
+
+#header-background {
+    background: url('../image/background-image.webp');
+    height: 800px;
+    width: 100%;
+    background-attachment: fixed;
+    position: relative;
+
+#hero-video {
+    padding: 200px 0% 10%;
+    max-width: 300px;
+    height: 500px;
+    position: absolute;
+    }
